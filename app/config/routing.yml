@@ -1,0 +1,19 @@
+#acme_test:
+#    resource: "@AcmeTestBundle/Resources/config/routing.yml"
+#    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+#app/config/routing.yml
+# _controller "默认"值，是一个特殊的键，当一个URL匹配这个路由时，要去执行哪个控制器，
+#AppBundle\Controller\BlogController::listAction
+#AppBundle\Controller\BlogController::showAction
+#blog_list:
+#  path:     /blog
+#  default:  { _controller: AppBundle:blog:list }
+#
+#  blog_show:
+#    path:   /blog/{slug}
+#    defaults: { _controller: AppBundle:blog:show }
